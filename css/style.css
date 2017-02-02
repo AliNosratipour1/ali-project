@@ -1,0 +1,298 @@
+body{	
+background-color:#cccccc;
+font-size:97.5%;
+font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+text-align:left;
+}
+
+a{
+text-decoration:none;
+}
+
+a:link, a:visited{
+color:#cf5c3f;
+	
+}
+
+a:hover, a:active{
+background-color:#cf5c3f;
+color:#ffffff;	
+}
+
+.body{
+margin:0 auto;
+width:70%;
+clear:both;
+
+}
+.main-header img{
+width:20%;
+height:auto;
+margin:2% 0;
+}	
+	
+.main-header nav{
+background-color:#666666;
+height:40px;
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;		
+}
+
+.main-header  nav ul{
+list-style:none;
+margin: 0 auto;	
+}
+
+.main-header  nav ul li{
+float:left;
+display:inline;
+
+}
+
+.main-header nav a:link, .main-header nav a:visited{
+color:#ffffff;
+display:inline-block;
+padding: 10px 25px;
+height:20px;
+
+}
+
+.main-header nav a:hover, .main-header nav a:active,
+.main-header nav .active a:link, .main-header nav .active a:visited	
+{
+background-color: orange;
+}
+
+.main-header nav ul li a{
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;	
+
+}
+
+.main-content{
+line-height:25px;
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;	
+
+}
+.content{
+width:70%;
+float:left;	
+
+}
+.top-content{
+background-color:#ffffff; 	
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;
+padding: 3% 5%;
+margin-top:3%
+	   
+}
+
+.buttom-content{
+background-color:#ffffff; 	
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;
+padding: 3% 5%;
+margin-top:3%	  
+}
+.top-sidebar{
+width:21%;
+background-color:#ffffff;
+float:left;	
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;
+
+padding:2% 3%;
+
+
+margin:2% 0 2% 3%;
+}
+
+
+.middle-sidebar{
+width:21%;
+background-color:#ffffff;
+float:left;	
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;
+margin-left:3%;
+padding:2% 3%;
+margin-bottom:2%;  	       
+}
+.buttom-sidebar{
+width:21%;
+background-color:#ffffff;
+float:left;	
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px ;
+-ms-border-radius:5px ;
+margin-left:3%;
+padding:2% 3%; 
+margin-bottom:2%; 
+
+}
+
+.main-footer{
+width:100%;
+float:left;
+background-color:#666666;
+border-radius:5px ;	
+-moz-border-radius:5px ;	
+-webkit-border-radius:5px; 
+-ms-border-radius:5px;
+margin: 1% 1%;
+height: 40px;
+color:#ffffff;
+	
+}
+.main-footer p{
+width:92%;
+margin:10% auto;
+
+
+}
+.post-info{
+	font-style: italic;
+	color:#999999;
+	font-size:85%;
+	
+}
+
+
+/*==================== flip 3D Effect========================= */
+
+.flip3D{
+width:240px;
+height:200px;
+margin:10px;
+float:left;
+	
+}
+
+.flip3D > .front{
+position:absolute;
+-webkit-transform:perspective(600px) rotateY(0deg);
+transform:perspective(600px) rotateY(0deg);
+background:#fc0; width:240px; height:200px; border-radius:7px;
+transition:-webkit-transform .5s linear 0s;
+backface-visibility:hidden;  transition:transform .5s linear 0s;
+
+
+}
+
+.flip3D > .back{
+position:absolute;
+-webkit-transform:perspective(600px) rotateY(0deg);
+transform:perspective(600px) rotateY(180deg);
+background:#80bfff; width:240px; height:200px; border-radius:7px;
+ transition:-webkit-transform .5s linear 0s;
+backface-visibility:hidden;  transition:transform .5s linear 0s;
+}
+
+.flip3D:hover > .front{
+	-webkit-transform:perspective(600px) rotateY(-180deg);
+transform:perspective(600px) rotateY(-180deg);
+}
+.flip3D:hover > .back{
+	-webkit-transform:perspective(600px) rotateY(-180deg);
+transform:perspective(600px) rotateY(0deg);
+}
+
+@media only screen and (min-width:150px) and (max-width:600px){
+.body{
+font-size: 95%;
+
+width:90%;
+}
+
+.flip3D{
+width:21%;
+height:200px;
+margin-left: 10px;
+
+float:left;
+	
+}
+
+.main-header img{
+width:100%;
+
+}
+
+
+
+.main-header nav{
+
+height:160px;
+	
+}
+
+.main-header  nav ul{
+padding-left:0;
+}
+
+.main-header  nav ul li{
+width:100%;
+text-align:center;
+
+}
+
+.main-header nav a:link, .main-header nav a:visited{
+
+padding: 10px 25px;
+height:20px;
+display:block; 
+
+}
+
+
+.content{
+width:100%;
+float:left;	
+
+}
+
+.top-content{
+
+margin-bottom:3%;
+	   
+}
+
+.buttom-content{
+margin-top:3%;
+}
+
+.post-info{
+	
+display:none; 	
+	
+}
+
+
+
+.top-sidebar,.middle-sidebar,.buttom-sidebar{
+width:94%;
+padding:2% 3%;
+margin:2% 0 2% 0%;
+}
+
+
+
+
+}
